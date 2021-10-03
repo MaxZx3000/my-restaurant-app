@@ -1,0 +1,16 @@
+favorite-page
+    article
+        margin-top: 20px
+
+    #favorite-restaurant-results
+        display: block
+        height: 800px
+        overflow-y: auto
+    
+    @media screen and (min-width: 600px)
+        .grid-restaurant
+            grid-template-columns: repeat(2, 1fr)
+
+    @media screen and (min-width: 1060px)
+        .grid-restaurant
+            grid-template-columns: repeat(3, 1fr)

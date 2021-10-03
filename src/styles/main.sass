@@ -1,0 +1,270 @@
+// Core CSS Elements
+    
+*
+    font-family: 'Libre Franklin', sans-serif
+    box-sizing: border-box
+
+a, button
+    cursor: pointer
+    padding: 22px
+
+a
+    text-decoration: none
+    cursor: pointer
+
+h1
+    font-size: 40px
+
+h2
+    font-size: 25px
+
+h3
+    font-size: 20px
+    
+body
+    position: relative
+    padding: 0
+    margin: 0
+
+p
+    word-wrap: break-word
+    overflow-wrap: anywhere
+
+// Message
+message-element
+    .grid
+        grid-template-columns: repeat(1fr)
+        text-align: center
+    
+    .error, .success
+        border-radius: 5px
+        align-items: center
+        margin-top: 10px
+        margin-bottom: 10px
+
+    .error
+        background-color: #850000
+        
+    .success
+        background-color: #058501
+        
+    p
+        margin: 0
+        padding: 0 !important
+        height: 100%
+        text-align: center !important
+        color: white
+        padding-right: 0px !important
+
+    i
+        font-size: 30px !important
+        padding-top: 5px !important
+        padding-bottom: 5px !important
+        text-align: center !important
+        color: white
+
+// Skip link
+
+.skip-link
+    position: absolute
+    background-color: #ba7967
+    color: white
+    z-index: 100
+    left: 0
+    top: -100px
+
+.skip-link:focus
+    top: 0px
+
+.section-title
+    font-size: 25px !important
+    text-align: center
+    padding: 10px
+    text-transform: uppercase
+
+// Icon
+
+.embossed-icon
+    margin-right: 15px
+    padding: 5px
+    background-color: white
+    border-radius: 100%
+    box-shadow: 0px 2px 5px #d6d6d6
+
+.article-icon
+    position: relative
+    font-size: 80px !important
+    left: 50%
+    transform: translateX(-50%)
+    color: #5e6f64
+
+.article-icon::before,
+.article-icon::after
+    position: absolute
+    content: ""
+    width: 60px
+    top: 50%
+    height: 10px
+    border-top: 5px solid #5e6f64
+
+.article-icon::before
+    left: -50%
+    transform: translateX(-50%)
+
+.article-icon::after
+    right: -50%
+    transform: translateX(50%)
+
+// Card
+
+.card
+    position: relative
+    box-shadow: 0px 5px 5px #e4e4e4
+    border-radius: 10px
+    background-color: white
+
+.card
+    .image-container
+        position: relative
+
+.card
+    .card-title
+        font-size: 22px
+        padding: 10px
+        padding-top: 55px
+        background-color: #5e6f64
+        color: white
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+        border-top: 10px solid #3f4441
+        margin-bottom: 0
+
+// Search Element
+search-element
+    .search-class
+        height: 100%
+
+    > div
+        width: 80%
+        box-shadow: 0 3px 10px #e2e2e2
+        position: relative
+        left: 50%
+        border-radius: 100px
+        transform: translateX(-50%)
+        margin-bottom: 20px
+        overflow: hidden
+
+    i
+        display: block
+        text-align: center
+
+    button
+        position: absolute
+        left: 100%
+        transform: translateX(-100%)
+        padding: 0
+        height: 100%
+        border-top-right-radius: 30px
+        border-bottom-right-radius: 30px
+        background: #ba7967
+        padding-left: 30px
+        padding-right: 30px
+        border: none
+        color: white
+        z-index: 10
+        transition: 0.5s ease
+    
+    button:hover
+        background: #cc836f
+
+    input[type="text"]
+        height: 100%
+        width: 100%
+        padding: 20px
+        padding-right: 90px
+        border-bottom-left-radius: 100px
+        border-top-left-radius: 100px
+        border: none
+
+    input[type="text"]:focus
+        border: none
+        outline: none
+
+// Action Bottom Element
+
+action_bottom-element
+    position: sticky
+    z-index: 10
+    width: 100%
+    transition: 0.5s ease
+    bottom: 600px
+
+action_bottom-element.hide
+    bottom: -300px
+
+// Grid
+.grid
+    display: grid
+    gap: 20px
+    padding: 10px
+
+.grid
+    i
+        font-size: 18px
+
+// Logo and Icon
+
+.icon-colorized
+    color: #5e6f64 !important
+
+.logo-image-header,
+.logo-image
+    position: relative
+    left: 50%
+    transform: translateX(-50%)    
+
+.logo-image-header
+    width: 80px
+    height: 80px
+
+.logo-name
+    display: inline-block
+    position: absolute
+    font-family: 'Lemon', sans-serif
+    text-shadow: 5px 5px black
+    font-size: 18px
+    text-align: center
+    left: 50%
+    top: 90%
+    width: 100%
+    margin: 0
+    transform: translate(-50%, -90%)
+    z-index: 1
+
+.right-subtitle
+    color: #5e6f64
+    display: inline-block
+    text-align: center
+    font-size: small
+
+// Button
+.stylized-button
+    background: #915f51
+    border-radius: 50px
+    border: none
+    color: white
+    transition: 0.5s ease
+    box-shadow: 0px 2px 5px #a17062
+
+.stylized-button:hover
+    background: #c98b7a
+    box-shadow: 0px 5px 10px #a17062
+
+@media screen and (min-width: 620px)
+    message-element
+        .grid
+            grid-template-columns: 5% 95%
+            text-align: justify !important
+
+        p
+            text-align: justify !important

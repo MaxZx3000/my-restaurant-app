@@ -1,0 +1,94 @@
+home-page
+    .jumbotron
+        position: relative
+        margin-top: 20px
+        padding-top: 120px
+        padding-bottom: 90px
+
+    .jumbotron::before,
+    .jumbotron::after
+        position: absolute
+        content: ""
+        z-index: 1
+        width: 100%
+        height: 10px   
+
+    .jumbotron::before
+        top: -8px
+        border-top: 5px dotted #ba7967
+
+    .jumbotron::after
+        bottom: -8px
+        border-bottom: 5px dotted #ba7967
+
+    .jumbotron
+        img, source
+            top: 0
+            position: absolute
+            object-fit: cover
+            z-index: -1
+
+        i
+            position: relative
+            color: #ffdecf
+            
+        i::before
+            content: ""
+            position: absolute
+            width: 130px
+            height: 130px
+            transform: translate(-20px, -20px)
+            border: 5px dotted white
+            border-radius: 50%
+
+        h1
+            font-family: "Lemon", sans-serif
+            font-size: 31px
+
+        h1, h2
+            text-shadow: 2px 2px black
+            text-align: center
+            margin: 0
+            color: white
+            margin-left: 15px
+            margin-right: 15px
+            padding: 20px 10px 20px 10px  
+
+        i::after,
+        h2::after
+            position: absolute
+            width: 130px
+            content: ""
+            border-top: 6px solid white
+            left: 50%
+        
+        i::after
+            transform: translate(-50%, -70px)  
+
+        h2::after
+            transform: translate(-50%, 90px)  
+
+    .section-main-title
+        font-size: 30px
+        margin-right: 15px
+        margin-left: 15px
+
+    #jumbotron-icon
+        position: relative
+        font-size: 100px
+        left: 50%
+        transform: translateX(-50%)
+
+    article
+        margin-top: 20px
+        margin-bottom: 20px
+
+    #restaurant-results
+        display: block
+        height: 800px
+        overflow-y: auto
+
+@media screen and (min-width: 1060px)
+    home-page
+        .grid-jumbotron
+            grid-template-columns: repeat(2, 1fr)

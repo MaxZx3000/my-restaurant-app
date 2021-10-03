@@ -1,0 +1,142 @@
+header
+    width: 100%
+    box-shadow: 0px 2px 5px #3f4441
+    border-bottom: 10px solid #3f4441
+    background: #5e6f64
+    color: white
+    list-style: none  
+    position: relative
+
+header
+    #logo-container
+        display: inline-block
+        width: 20%
+        left: 50%
+        transform: translateX(-50%)
+        position: relative
+
+header
+    navigation_drawer-element 
+        nav
+            position: fixed
+            top: 0%
+            left: 0%
+            width: 300px
+            transform: translateX(-300px)
+            z-index: 10
+            height: 100%
+            background-color: #5e6f64
+            border-right: 10px solid #3f4441
+            transition: 0.2s ease-in
+
+        li
+            display: block !important
+        
+        #logo-drawer
+            position: relative
+            background-color: #3f4441
+
+        #logo-name
+            font-size: 25px
+            width: 100% !important
+    
+        nav.open
+            transform: translateX(0)
+
+    ul
+        padding: 0
+        margin: 0
+    
+    li
+        margin-top: 1px
+        margin-bottom: 1px
+    li i
+        transform: translateY(5px)
+        margin-right: 10px
+    a
+        padding-left: 20px
+        display: block
+        width: 100%
+        color: white
+        padding-top: 22px
+        padding-bottom: 22px
+        border-top: 2px solid #788f80
+        transition: 0.5s ease
+
+    #link-hamburger
+        display: block
+        top: 0
+        position: absolute
+        left: 100%
+        width: 70px
+        transform: translateX(-100%)
+        border-top: none
+        height: 100%
+        padding-right: 20px
+
+    #link-hamburger
+        i
+            font-size: 30px
+            transform: translateY(5px)
+
+    .logo-image
+        position: relative
+        width: 130px
+        height: 130px
+        left: 50%
+        transform: translateX(-50%)
+        margin-top: 10px
+        margin-bottom: 10px
+
+    li:last-child
+        border-bottom: 2px solid #788f80
+
+    a:hover
+        background-color: #3f4441
+
+#list-item-logo-container
+    display: none
+
+
+@media screen and (min-width: 800px)
+    header
+        #link-hamburger
+            display: none
+
+        navigation_drawer-element
+            nav
+                position: relative
+                left: 50%
+                transform: translateX(-50%) !important
+                width: --moz-fit-content
+                width: fit-content
+                height: 100%
+                border-right: none
+                transition: 0s
+
+            nav li
+                position: relative
+                display: inline-block !important
+                list-style: none
+
+            nav li::after
+                content: ""
+                padding-top: 10px
+                padding-bottom: 10px
+                border-right: 2px solid #3f4441
+
+            ul, nav, li, a
+                height: 100%
+
+            #list-item-logo-container,
+            #close-button
+                display: none !important
+
+            a
+                display: inline-block
+                color: white
+                border-top: none
+
+            nav li:last-child::after
+                border-bottom: none !important
+                border-right: none !important

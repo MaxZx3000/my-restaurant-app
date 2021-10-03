@@ -1,0 +1,29 @@
+{
+    "name": "My Restaurant App PWA",
+    "short_name": "Restaurant App",
+    "description": "Your restaurant app for your hunger and appetite experience!",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ba7967",
+    "theme_color": "#ba7967",
+    "icons": [
+        {
+            "src": "/images/icons/MaskableLogo_96x96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/icons/MaskableLogo_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/icons/MaskableLogo_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+footer
+    .left-footer-container,
+    .right-footer-container
+        position: relative
+
+footer
+    custom-element:last-child
+        display: flex
+        align-items: center
+        justify-content: center
+
+footer
+    .logo-image
+        width: 150px
+        height: 150px
+
+footer
+    position: relative
+    background-color: #3f4441
+    color: white
+
+footer::before
+    position: absolute
+    content: ""
+    border-top: 5px dashed #5e6f64
+    width: 100%
+    height: 10px
+    top: -10px
+
+footer
+    container-element:last-child
+        display: flex
+        align-items: center
+        justify-content: center
+    
+    .right-footer-container
+        text-align: center
+
+.grid-footer
+    grid-template-columns: 1fr
+
+@media screen and (min-width: 600px)
+    .grid-footer
+        grid-template-columns: repeat(2, 1fr)

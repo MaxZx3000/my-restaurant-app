@@ -1,0 +1,28 @@
+invalid_page-element
+    article
+        margin: 50px 20px 50px 20px
+    
+    #image-404
+        margin-top: 20px
+        transform: rotateZ(45deg)
+        font-size: 100px !important
+
+    #image-container
+        position: relative
+        margin-top: 30px
+        margin-bottom: 50px
+
+    #image-container::before
+        content: ""
+        position: absolute
+        background-color: red
+        width: 100px
+        height: 100px
+        top: 50%
+        left: 50%
+        border: 8px solid #000000
+        background: linear-gradient(325deg, rgba(166,110,94,1) 0%, rgba(255,192,174,1) 100%)
+        transform: translate(-50%, -43%) rotateZ(45deg)
+        
+    article
+        text-align: center
